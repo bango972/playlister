@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List avec Rappels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List avec Rappels</h1>
+
+        <!-- Bouton pour changer de mode, placé en haut à droite -->
+        <button id="modeToggleBtn" class="mode-btn">🌙</button>
+
+        <!-- Formulaire pour ajouter une tâche -->
+        <div class="form-container">
+            <input type="text" id="taskInput" placeholder="Ajouter une tâche...">
+            <input type="date" id="reminderDate">
+            <input type="time" id="reminderTime">
+            <button id="addTaskBtn">+</button>
+        </div>
+
+        <ul id="taskList">
+            <li>
+                <span class="task-name">Exemple de tâche</span>
+                <span class="task-date">2025-04-18</span>
+                <button class="delete-btn">✖</button>
+            </li>
+        </ul>
+
+        <!-- Notification -->
+        <div class="notification" id="notification">Tâche ajoutée avec succès !</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
